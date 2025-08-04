@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denard's Portfolio</title>
+    <style>
+        header {
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        p {
+            color: white;
+            text-align: center;
+        }
+       .flex-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.flex-container .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: black;
+}
+
+.gif-border {
+  display: inline-block;    
+  border: 3px solid black;  
+  padding: 10px;            
+  background-color: black;   
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.buni" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"></script> 
+</head>
+<body>
+ <header>
+<nav class="navbar navbar-expand">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="http://127.0.0.1:5500/portfolio/fortnite.html">Fortnite</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="http://127.0.0.1:5500/portfolio/portfolio.html">Myself</a>
+      </li>
+    </ul>
+  </nav>
+  <p>
+    Denard's Portfolio
+  </p>
+    </header>   
+    <div class="flex-container">
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video-from-rawpixel-id-17211265-sd.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <div class="gif-border">
+      <img src="https://i.pinimg.com/originals/a4/51/ff/a451ff006c9382e706f5c2f4137747f2.gif" alt="windwalker echo" width="450" height="450">
+    </div>
+    
+
+    <p style="font-size: 2rem; color: #000;">About Me</p>
+    <p style="font-size: 1.25rem; color: #000;">Learn more about me in the bar</p>
+  </div>
+</div>
+    </div>
+</body>
+</html>

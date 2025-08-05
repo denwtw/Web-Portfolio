@@ -18,6 +18,19 @@
   position: relative;
   overflow: hidden;
   height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;  
+}
+.bordertest {
+  border: 2px solid black; 
+  padding: 15px;
+  width: 550px;
+  margin: 20px;
+}
+.gallery {
+  float: center;
 }
 
 #bg-video {
@@ -40,12 +53,6 @@
   color: black;
 }
 
-.gif-border {
-  display: inline-block;    
-  border: 3px solid black;  
-  padding: 10px;            
-  background-color: black;   
-}
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.buni" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"></script> 
@@ -72,12 +79,15 @@
   </video>
   <div class="content">
     <div class="gif-border">
+      <div class="bordertest">
       <img src="https://i.pinimg.com/originals/a4/51/ff/a451ff006c9382e706f5c2f4137747f2.gif" alt="windwalker echo" width="450" height="450">
+      <p style="font-size: 2rem; color: #000;">About Me</p>
+    <p style="font-size: 1.25rem; color: #000;">Learn more about me in the bar</p>
+      </div>
     </div>
     
 
-    <p style="font-size: 2rem; color: #000;">About Me</p>
-    <p style="font-size: 1.25rem; color: #000;">Learn more about me in the bar</p>
+    
   </div>
 </div>
     </div>
